@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inox Movies</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body class="container-fluid">
+    <h2>Inox Movies</h2>
+   <button class="btn btn-danger" data-bs-target="#movies" data-bs-toggle="modal">Book Ticket</button> 
+   <div class="modal" id="movies">
+    <div class="modal-dialog-modal-fullscreen">
+        <diV class="modal-content">
+            <div class="modal-header">
+                <button class="btn-close" data-bs-dissmiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-around">
+                   <diV>
+                    <select class="form-select">
+                        <option>select movies</option>
+                        <option>Top Gun- Maverick</option>
+                        <option>Pathan - Hindi</option>
+                    </select>
+                   </diV>
+                   <diV>
+                    <select class="form-select">
+                        <option>Select Cinema</option>
+                        <option>Inox Gvk</option>
+                        <option>Inox Ameerpet</option>
+                    </select>
+                   </diV>
+                   <diV>
+                    <select class="form-select">
+                        <option>Select Time</option>
+                        <option>10:30 AM</option>
+                        <option>5:40pm</option>
+                    </select>
+                   </diV>
+                   <diV>
+                    <select class="form-select">
+                        <option>Select Seats</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                   </diV>
+                   <div>
+                    <button class="btn btn-danger">Book</button>
+                   </div>
+                </div>
+            </div>
+        </diV>
+    </div>
+   </div>
+
+
+   <script src="../node_modules/jquery/dist/jquery.js"></script>
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

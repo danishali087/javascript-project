@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INput Demo</title>
+    <link rel = "stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel = "stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../src/scripts/input-demo.js"></script>
+</head>
+<body class="container-fluid">
+    <div id="RegisterContainer">
+        <h2>javascript Form </h2>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">Register Product</button>
+    </div>
+    <div class="modal fade" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3> <span class="bi bi-cart4"></span> Register Product</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>product Name</dt>
+                        <dd><input class="form-control" type="text" id="Name"></dd>
+                        <dt>price</dt>
+                        <dd><input class="form-control" type="number" id="Price"></dd>
+                        <dt>City</dt>
+                        <dd>
+                            <select class="form-select" id="City">
+                                <option>Hyderabad</option>
+                                <option>Ranchi</option>
+                                <option>Chaibasa</option>
+                            </select>
+                        </dd>
+                         <dt>Stock</dt>
+                         <dd class="form-switch">
+                            <input class="form-check-input" id="Stock" type="checkbox"> Available
+                         </dd>
+                         <dt>Manufactured</dt>
+                         <dd>
+                            <input class="form-control" type="date" id="Manufactured">
+                         </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnModalRegister" data-bs-dismiss="modal" onclick="RegisterClick()" class="btn btn-success">Register</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    </div>
+    <div id="DetailsContainer" style="display: none">
+    <table class="table table-bordered table-striped">
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <td id="lblName"></td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td id="lblprice"></td>
+          </tr>
+          <tr>
+            <th>City</th>
+            <td id="lblCity"></td>
+          </tr>
+          <tr>
+            <th>Stock</th>
+            <td id="lbStock"></td>
+          </tr>
+          <tr>
+            <th>Manufactured</th>
+            <td id="lblMfd"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <!--<div id="DetailsContainer" style="display: none">
+        <h3>Product Details</h3>
+        <dl class="row">
+            <dt class="col-4">Name</dt>
+            <dd class="col-8" id="lblName"></dd>
+            <dt class="col-4">Price</dt>
+            <dd class="col-8" id="lblprice"></dd>
+            <dt class="col-4">City</dt>
+            <dd class="col-8"id="lblCity"></dd>
+            <dt class="col-4">Stock</dt>
+            <dd class="col-8"id="lbStock"></dd>
+            <dt class="col-4">Manufactured</dt>
+            <dd class="col-8"id="lblMfd"></dd>
+        </dl>
+        !-->
+        <button onclick="EditClick()" data-bs-toggle="modal" data-bs-target="#register" class="btn btn-warning">
+            <span class="bi bi-pen"></span> Edit
+        </button>
+        <a href="./input-demo.html" class="btn btn-primary">
+            New product
+        </a>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules//bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inox Movies</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../src/scripts/inox2.js"></script>
+</head>
+<body class="container-fluid">
+    <h2>Inox Movies</h2>
+    <!-- Book Ticket Button -->
+    <button class="btn btn-danger" data-bs-target="#movies" data-bs-toggle="modal">Book Ticket</button>
+
+    <!-- Modal -->
+    <div class="modal" id="movies">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Booking Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-around">
+                        <!-- Movie Selection -->
+                        <div>
+                            <label for="movie-select">Select Movie:</label>
+                            <select class="form-select" id="movie-select">
+                                <option value="">Select Movie</option>
+                                <option value="top-gun-maverick">Top Gun: Maverick (English) (U/A)</option>
+                                <option value="pathan-hindi">Pathan - Hindi</option>
+                            </select>
+                        </div>
+
+                        <!-- Cinema Selection -->
+                        <div>
+                            <label for="cinema-select">Select Cinema:</label>
+                            <select class="form-select" id="cinema-select">
+                                <option value="">Select Cinema</option>
+                                <option value="inox-gvk">INOX GVK</option>
+                                <option value="inox-ameerpet">INOX Ameerpet</option>
+                            </select>
+                        </div>
+
+                        <!-- Time Selection -->
+                        <div>
+                            <label for="time-select">Select Time:</label>
+                            <select class="form-select" id="time-select">
+                                <option value="">Select Time</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="5:40 PM">5:40 PM</option>
+                            </select>
+                        </div>
+
+                        <!-- Seats Selection -->
+                        <div>
+                            <label for="seats-select">Select Seats:</label>
+                            <select class="form-select" id="seats-select">
+                                <option value="">Select Seats</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+
+                        <!-- Book Button -->
+                        <div>
+                            <button class="btn btn-danger"id="book-button" data-bs-dismiss="modal">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Summary Section -->
+    <div id="booking-summary" class="mt-5">
+        <h3>Booking Summary</h3>
+        <div id="summary-table"></div>
+    </div>
+
+    <!-- Bootstrap JS and Custom Script -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
